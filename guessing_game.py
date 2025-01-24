@@ -1,8 +1,11 @@
 secret_number = int(input("Enter a number between 1 and 10: ")) #the secret number that the user has to guess
+
 while secret_number > 10:
         print("The number that you have entered is not within the specified range! Please enter a number between 1 and 10: ")
         secret_number = int(input("Enter a number between 1 and 10: "))
-        
+else:
+     print("You have entered a valid number. Another user can now try to guess the number.")
+
 guess_count = 0 
 guess_limit = 3 #The maximum number of guesses a user can make
 
